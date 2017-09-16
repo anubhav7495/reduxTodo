@@ -8,7 +8,7 @@ const CommonConfig = require('./webpack.common');
 module.exports = Merge(CommonConfig, {
   // entry
   entry: {
-    app: ['webpack-hot-middleware/client', './src']
+    app: ['webpack-hot-middleware/client?reload=true', './src']
   },
 
   // source-maps
