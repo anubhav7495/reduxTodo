@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --env=dev",
+    "dev": "node ./build/server.js",
     "prod": "npm run clean && webpack --env=prod --progress --profile",
-    "clean": "rimraf ./dist/*",
-    "server": "node ./build/server.js"
+    "clean": "rimraf ./dist/*"
   },
   "author": "anubhav7495",
   "license": "MIT",
